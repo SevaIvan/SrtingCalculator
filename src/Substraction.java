@@ -1,6 +1,5 @@
-public class Addition {
-
-    public static String addition(String input){
+public class Substraction {
+    public static String substraction(String input) {
         String result;
         try {int a = input.indexOf("\"");
             int b = input.indexOf("\"", (a+1));
@@ -18,12 +17,13 @@ public class Addition {
             if (str1.length() > 10 || str2.length() > 10) {
                 Incorrect.incorrect();
             }
-            result = str1+str2;
-
-        } catch (Exception e) {
-            System.out.println("¬ведены данные, не соответствующие услови€м./");
-            throw new RuntimeException(e);
-        }
+            if (str1.contains(str2)){
+            result = str1.replace(str2, "");
+        }else result = str1;
         return result;
+    } catch (Exception e) {
+        System.out.println("¬ведены данные, не соответствующие услови€м./");
+        throw new RuntimeException(e);
+        }
     }
 }
