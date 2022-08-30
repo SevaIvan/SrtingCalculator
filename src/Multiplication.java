@@ -13,7 +13,7 @@ public class Multiplication {
             int multiplicator = Examination.examination(value);
             return str1.repeat(multiplicator);
         } catch (Exception e) {
-            System.out.println("¬ведены данные, не соответствующие услови€м./");
+            System.out.println("¬ведены данные, не соответствующие услови€м.////");
             throw new RuntimeException(e);
         }
 

@@ -21,7 +21,7 @@ public class Addition {
             result = str1+str2;
 
         } catch (Exception e) {
-            System.out.println("¬ведены данные, не соответствующие услови€м./");
+            System.out.println("¬ведены данные, не соответствующие услови€м.//");
             throw new RuntimeException(e);
         }
         return result;

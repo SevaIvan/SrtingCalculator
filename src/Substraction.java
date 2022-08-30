@@ -22,7 +22,7 @@ public class Substraction {
         }else result = str1;
         return result;
     } catch (Exception e) {
-        System.out.println("¬ведены данные, не соответствующие услови€м./");
+        System.out.println("¬ведены данные, не соответствующие услови€м./////");
         throw new RuntimeException(e);
         }
     }

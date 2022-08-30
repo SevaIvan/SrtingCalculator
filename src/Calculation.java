@@ -7,13 +7,16 @@ public class Calculation {
         String input = console.nextLine();
 
         try {
-            switch (input) {
-                case "+" -> Print.print(Addition.addition(input));
-                case "-" -> Print.print(Substraction.substraction(input));
-                case "*" -> Print.print(Multiplication.multiplication(input));
-                case "/" -> Print.print(Division.division(input));
-                default -> Incorrect.incorrect();
-            }
+            if (input.contains("+")){
+                Print.print(Addition.addition(input));
+            } else if (input.contains("-")) {
+                Print.print(Substraction.substraction(input));
+            } else if (input.contains("*")) {
+                Print.print(Multiplication.multiplication(input));
+            } else if (input.contains("/")) {
+                Print.print(Division.division(input));
+            }else Incorrect.incorrect();
+
         }
         catch (Exception e) {
             System.out.println("Введены данные, не соответствующие условиям./");
